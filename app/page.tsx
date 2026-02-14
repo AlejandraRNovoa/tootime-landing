@@ -73,8 +73,7 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed opacity-65 lg:mx-0 md:text-lg">
-              Planifica equipos, coordina turnos y gestiona ausencias con reglas claras.
-              Siempre actualizado. En tiempo real.
+          Todo lo que ocurre en tu restaurante, centralizado en un sistema único. Siempre actualizado. Siempre bajo control.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row lg:items-start">
@@ -88,14 +87,14 @@ export default function Home() {
                 href="#how"
                 className="rounded-2xl border border-stone-200 bg-white px-7 py-3.5 text-sm font-semibold shadow-sm hover:shadow-md transition-all"
               >
-                Ver c&oacute;mo funciona
+                Cómo funciona
               </a>
             </div>
 
             <div className="mx-auto mt-12 grid max-w-sm grid-cols-3 gap-3 lg:mx-0 lg:max-w-md">
-              <Stat label="Publicaci&oacute;n" value="1 clic" />
-              <Stat label="Reglas" value="flexibles" />
-              <Stat label="Horas" value="controladas" />
+              <Stat label="Planificación" value="estructurada" />
+              <Stat label="Reglas" value="adaptables" />
+              <Stat label="Control" value="real" />
             </div>
           </div>
         </div>
