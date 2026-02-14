@@ -151,7 +151,7 @@ export default function Home() {
             <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">C&oacute;mo funciona</h2>
             <div className="mt-6 grid gap-4 md:grid-cols-3">
               <Step n="1" title="A&ntilde;ade tu equipo" text="Empleados, horas, estados, d&iacute;as libres y roles." />
-              <Step n="2" title="Define reglas" text="Descansos, m&iacute;nimos, turnos, festivos y excepciones." />
+              <Step n="2" title="Define las reglas" text="Descansos, m&iacute;nimos, turnos, festivos y excepciones." />
               <Step n="3" title="Genera y publica" text="Revisi&oacute;n r&aacute;pida, avisos claros y publicaci&oacute;n ordenada." />
             </div>
           </div>
