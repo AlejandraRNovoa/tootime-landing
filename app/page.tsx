@@ -5,15 +5,15 @@ export default function Home() {
     <main className="min-h-screen bg-white text-[#0A0706]">
       {/* ── Navbar ── */}
       <header className="sticky top-0 z-50 bg-[#6B8A3A] shadow-sm">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+        <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-[clamp(1.5rem,5vw,6rem)] py-3">
           <div className="flex items-center gap-3">
             <div className="h-8 w-8 rounded-lg bg-white/20 shadow-sm" />
             <span className="text-lg font-semibold tracking-tight text-white">TooTime</span>
           </div>
 
           <div className="hidden items-center gap-8 md:flex">
-            <a href="#features" className="text-sm text-white/80 hover:text-white transition-colors">Funciones</a>
-            <a href="#how" className="text-sm text-white/80 hover:text-white transition-colors">C&oacute;mo funciona</a>
+            <a href="#features" className="text-sm text-white/80 hover:text-white transition-colors">Nosotros</a>
+            <a href="#how" className="text-sm text-white/80 hover:text-white transition-colors">Cómo funcina</a>
             <a href="#reviews" className="text-sm text-white/80 hover:text-white transition-colors">Opiniones</a>
             <a href="#contact" className="text-sm text-white/80 hover:text-white transition-colors">Acceso</a>
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden bg-white">
-        {/* Background image — full bleed, desktop only */}
+        {/* Background image — full-bleed 100vw, desktop only */}
         <div className="pointer-events-none absolute inset-0 hidden lg:block">
           <Image
             src="/images/hero-restaurante.png"
@@ -38,7 +38,7 @@ export default function Home() {
             priority
             sizes="100vw"
             className="object-cover"
-            style={{ objectPosition: "70% center" }}
+            style={{ objectPosition: "65% top" }}
           />
           {/* Gradient overlay — progressive left-to-right reveal */}
           <div
@@ -58,8 +58,8 @@ export default function Home() {
           />
         </div>
 
-        {/* Content */}
-        <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20 lg:py-28">
+        {/* Content — fluid container matching navbar */}
+        <div className="relative mx-auto max-w-[1600px] px-[clamp(1.5rem,5vw,6rem)] py-16 md:py-20 lg:py-28">
           <div className="max-w-2xl text-center lg:text-left">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3.5 py-1 text-xs font-medium shadow-sm backdrop-blur-sm lg:bg-white/70">
               <span className="h-2 w-2 rounded-full bg-[#6B8A3A] animate-pulse" />
@@ -73,7 +73,7 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed opacity-65 lg:mx-0 md:text-lg">
-          Todo lo que ocurre en tu restaurante, centralizado en un sistema único. Siempre actualizado. Siempre bajo control.
+              Todo lo que ocurre en tu local, centralizado en un sistema &uacute;nico. Siempre actualizado. En tiempo real.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row lg:items-start">
@@ -87,14 +87,8 @@ export default function Home() {
                 href="#how"
                 className="rounded-2xl border border-stone-200 bg-white px-7 py-3.5 text-sm font-semibold shadow-sm hover:shadow-md transition-all"
               >
-                Cómo funciona
+                C&oacute;mo funciona
               </a>
-            </div>
-
-            <div className="mx-auto mt-12 grid max-w-sm grid-cols-3 gap-3 lg:mx-0 lg:max-w-md">
-              <Stat label="Planificación" value="estructurada" />
-              <Stat label="Reglas" value="adaptables" />
-              <Stat label="Control" value="real" />
             </div>
           </div>
         </div>
@@ -102,19 +96,19 @@ export default function Home() {
 
       {/* ── Problem → Solution ── */}
       <section className="border-y border-stone-100 bg-stone-50 py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-[1600px] px-[clamp(1.5rem,5vw,6rem)]">
           <div className="grid gap-6 md:grid-cols-3">
             <Card
-              title="Cambios de &uacute;ltima hora"
-              text="Turnos que se rompen, mensajes por mil sitios y decisiones a ciegas."
+              title="Visibilidad operativa"
+              text="Estado del local, equipo y día a día. Siempre actualizado."
             />
             <Card
-              title="Ausencias y reglas"
-              text="Vacaciones, bajas, horas m&aacute;ximas y descansos&hellip; sin un sistema es caos."
+              title="Comunicación centralizada"
+              text="Menos WhatsApp. Más claridad. Decisiones con contexto y trazabilidad."
             />
             <Card
-              title="Publicaci&oacute;n sin estr&eacute;s"
-              text="Planifica, revisa y publica con avisos cuando algo no cuadra."
+              title="Publicación sin sorpresas"
+              text="Turnos siempre cubiertos. Sin huecos, sin descuidos, sin pérdida de control."
             />
           </div>
         </div>
@@ -122,30 +116,36 @@ export default function Home() {
 
       {/* ── Features ── */}
       <section id="features" className="bg-white py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-[1600px] px-[clamp(1.5rem,5vw,6rem)]">
           <div>
             <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">
-              Lo esencial, bien hecho
+              Diseñado para operaciones reales
             </h2>
             <p className="mt-2 max-w-2xl text-sm opacity-70 md:text-base">
-              Una plataforma para coordinar equipos operativos con claridad: reglas, excepciones, turnos y control de horas.
+              Decisiones, reglas, excepciones y cambios diarios en un sistema estructurado y visible.
+Lo que antes dependía de memoria, mensajes o intuición, ahora queda organizado, validado y centralizado.
+Sin fricción. Sin puntos ciegos. Sin perder información.
             </p>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
-            <Feature title="Autom&aacute;tico + Manual" text="Genera horarios o ajusta a mano con avisos inteligentes." />
-            <Feature title="Reglas y excepciones" text="Descansos, m&iacute;nimos por turno, d&iacute;as cerrados, preferencias." />
-            <Feature title="Ausencias" text="Vacaciones y bajas sin romper el balance ni la planificaci&oacute;n." />
-            <Feature title="Control de horas" text="Seguimiento semanal/mensual y consistencia con lo publicado." />
-            <Feature title="Festivos" text="Calendarios y conteo por empleado con distribuci&oacute;n equitativa." />
-            <Feature title="Roles" text="Gestor, empleado, permisos y vistas seg&uacute;n perfil." />
+            <Feature title="Visibilidad operativa" text="Todo lo que ocurre en tu local, visible en un solo sistema. Siempre actualizado para que no te pierdas nada." />
+            <Feature title="Coordinación estructurada" text="Reglas, ausencias y cambios gestionados con contexto.
+Menos improvisación. Más consistencia." />
+            <Feature title="Publicación con control" text="Nada se publica sin validación.
+Turnos cubiertos. Reglas respetadas. Sin descuidos." />
+            <Feature title="Coherencia operativa" text="Lo planificado y lo trabajado siempre alineado.
+Con seguimiento y sin desajustes." />
+            <Feature title="Rendimiento operativo" text="Analiza cobertura, costes y facturación para detectar desequilibrios antes de que impacten en el servicio." />
+            <Feature title="Estructura de permisos" text="Cada persona accede a lo que necesita.
+Visibilidad según responsabilidad." />
           </div>
         </div>
       </section>
 
       {/* ── How it works ── */}
       <section id="how" className="border-y border-stone-100 bg-stone-50 py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-[1600px] px-[clamp(1.5rem,5vw,6rem)]">
           <div className="rounded-[2rem] bg-white p-7 shadow-sm">
             <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">C&oacute;mo funciona</h2>
             <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -159,7 +159,7 @@ export default function Home() {
 
       {/* ── Reviews ── */}
       <section id="reviews" className="bg-white py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-[1600px] px-[clamp(1.5rem,5vw,6rem)]">
           <div>
             <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">Lo que cambia</h2>
             <p className="mt-2 text-sm opacity-70 md:text-base">
@@ -186,7 +186,7 @@ export default function Home() {
 
       {/* ── CTA / Subscribe ── */}
       <section id="contact" className="border-t border-stone-100 bg-stone-50 py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-[1600px] px-[clamp(1.5rem,5vw,6rem)]">
           <div className="rounded-[2rem] bg-[#6B8A3A] p-8 text-white shadow-md">
             <div className="grid gap-6 md:grid-cols-2 md:items-center">
               <div>
